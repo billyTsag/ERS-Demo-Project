@@ -10,7 +10,7 @@ namespace ERS_Demo_Project.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public int Code { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         public string JobPosition { get; set; }       
     }
 }
