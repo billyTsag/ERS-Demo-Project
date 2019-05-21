@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ERS_Demo_Project.Models.Employee>
+@{
+    ViewBag.Title = "ReadEmployee";
+}
+
+<h2 class="text-center">View All Employees</h2>
+<hr />
+<div id="grid">    
+    @foreach (var Employee in Model)
+    {
+    <div class="grid-item">
+        ID: @Employee.ID
+        <hr />
+        Name: @Employee.Name
+        <br />
+        Code: @Employee.Code
+        <br />
+        Phone: @Employee.Phone
+        <br />
+        Job Position: @Employee.JobPosition
+        <hr />
+        <button>@Html.ActionLink("Edit", "UpdateEmployee", "Home", new { ID = Employee.ID }, null)</button>
+        <button>@Html.ActionLink("Delete", "DeleteEmployee", "Home", new { ID = Employee.ID }, null)</button>
+    </div>
+    }    
+</div>

@@ -22,3 +22,17 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*  My Own CSS */
+
+#grid{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid-item{
+    border: 1px solid black;
+    text-align: center;
+    padding:1rem;
+}
